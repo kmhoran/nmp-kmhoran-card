@@ -7,6 +7,8 @@
   "bin": "./cli.js",
   "dependencies": {
     "boxen": "^2.1.0",
+    "commander": "^2.19.0",
+    "npm-user": "^3.0.2",
     "prettyjson": "^1.2.1"
   }
 }
