@@ -8,5 +8,5 @@ const options = {
 };
 const argv = minimist(process.argv.slice(2), options);
 
-// console.log(boxen(pkg(argv), {padding: 1}));
+// console.log(pkg(argv));
 console.log(boxen('kmhoran', {padding: 1}));
