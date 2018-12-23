@@ -1,0 +1,12 @@
+{
+  "name": "kmhoran",
+  "version": "1.0.1",
+  "main": "cli.js",
+  "author": "kmhoran",
+  "license": "MIT",
+  "bin": "./cli.js",
+  "dependencies": {
+    "boxen": "^2.1.0",
+    "prettyjson": "^1.2.1"
+  }
+}
