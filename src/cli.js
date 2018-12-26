@@ -1,15 +1,12 @@
 #!/usr/bin/env node
-process.chdir(__dirname);
-import program from "commander";
-import { printCard } from "./card";
+const minimist = require("minimist");
+const pkg = require("./card");
 
-module.exports = () => {};
+const options = {
+  alias: { json: 'j' }
+}
 
-program.version("1.0.4");
+const argv = minimist(process.argv.slice(2), options);
 
-program
-  .command("*")
-  .description("return business card")
-  .action(printCard(process.argv));
-
-program.parse(process.argv);
+console.log(pkg(argv));
+// console.log(boxen('kmhoran', {padding: 1}));

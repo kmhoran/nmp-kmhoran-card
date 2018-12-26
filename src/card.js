@@ -1,4 +1,4 @@
-import boxen from "boxen";
+const boxen = require("boxen");
 const { render } = require("prettyjson");
 const myInfo = require("./lib/myInfo");
 
@@ -8,12 +8,9 @@ const renderOpts = {
   stringColor: "green"
 };
 
-export function printCard(args=[], returnJson=false) {
-  const flag = args[2];
-  if (flag && (flag.toLowerCase() == "-h" || flag.toLowerCase() == "--help")) {
-    return;
-  }
-  
-  console.log(boxen(render(myInfo, renderOpts), { padding: 1 }));
-  console.log("use --help for more options");
-}
+module.exports = args => {
+  if (!args || !args.json)
+    return boxen(render(myInfo, renderOpts), { padding: 1 });
+
+  return JSON.stringify(myInfo);
+};

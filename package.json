@@ -4,16 +4,12 @@
   "main": "cli.js",
   "author": "kmhoran",
   "license": "MIT",
-  "bin": "./dist/cli.js",
+  "bin": "./src/cli.js",
   "scripts": {
-    "build": " babel ./src -w -d ./dist"
+    "start": "node ./src/cli.js"
   },
   "dependencies": {
-    "@babel/cli": "^7.2.3",
-    "@babel/core": "^7.2.2",
-    "@babel/preset-env": "^7.2.3",
     "boxen": "^2.1.0",
-    "commander": "^2.19.0",
     "npm-user": "^3.0.2",
     "prettyjson": "^1.2.1"
   }
