@@ -5,7 +5,7 @@ Cli for my digital businesscard
 - Node.js
 
 ## CLI Usage
-To display the terminal business card:
+To output pretty card:
 > $ npx kmhoran
 
 <p align="center">
