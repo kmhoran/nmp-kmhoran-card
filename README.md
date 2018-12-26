@@ -9,7 +9,7 @@ To display the terminal business card:
 > $ npx kmhoran
 
 <p align="center">
-  <img alt="cli in action" src="h../assets/kmhoran_screenshot.png?raw=true">
+  <img alt="cli in action" src="../assets/kmhoran_screenshot.png?raw=true">
 </p>
 
 To outputput as JSON:
